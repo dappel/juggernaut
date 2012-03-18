@@ -1,0 +1,16 @@
+---
+applications:
+  .:
+    name: msg1
+    url: ${name}.${target-base}
+    framework:
+      name: node
+      info:
+        mem: 64M
+        description: Node.js Messaging Server Application
+        exec: 
+    mem: 128M
+    instances: 1
+    services:
+      redis-a999d:
+        type: redis
